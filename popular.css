@@ -1,0 +1,193 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding: 20px 7%; /* top bottom left right */
+}
+.nav-links li a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+    color: #ff5361; /* Optional: Change color on hover */
+}
+
+.place img:hover {
+    transform: scale(1.1); /* Enlarge the image */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+.logo{
+    width : 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-white{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.navbar-white .nav-links li a{
+    color: #000;
+}
+.navbar-white .register-btn{
+    background: #ff5361;
+    color: #fff;
+    border-radius: 20px;
+    
+    padding: 5px;
+    text-decoration: none;
+}
+.navbar-white .register-btn:hover{
+    text-decoration: underline #000;
+    color: #000;
+}
+nav.navbar-white .fa-bars{
+    color: #000;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sub-title {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #333;
+}
+
+.popular-places { /* Corrected from .popular- places */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.place {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.place img {
+    width: 100%;
+    height: auto;
+}
+
+.place h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.place h3:hover{
+    text-decoration: underline black;
+    cursor: pointer;
+}
+.place p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+
+}
+.footer p{
+    padding-bottom: 15px;
+}
+.footer .facebook{
+    color:#250b6c;
+}
+.footer .youtube{
+    color: #f00f22;
+}
+.footer .twitter{
+    color:#45a0e0;
+}
+.footer .linkedin{
+    color:#393bb3;
+}
+.footer .instagram{
+    color: rgb(155, 26, 106);
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        display: none; /* Hide by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .sub-title {
+        font-size: 20px; /* Adjust subtitle size */
+    }
+
+    .popular-places {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+
+    .footer {
+        font-size: 14px; /* Adjust footer font size */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-links li {
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    .place h3 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .place p {
+        font-size: 12px; /* Adjust paragraph size */
+    }
+}

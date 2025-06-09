@@ -1,0 +1,158 @@
+body {
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: white;
+    color: #000;
+    padding: 10px 0;
+}
+.logo{
+    width : 140px;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #ff5361;
+}
+
+.register-btn {
+    background-color: #ff5361;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.register-btn:hover{
+   color: #000;
+    text-decoration: underline #000;
+    background-color: #0056b3;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0 , 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+
+.faq {
+    margin: 20px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+
+}
+.footer p{
+    padding-bottom: 15px;
+}
+.footer .facebook{
+    color:#250b6c;
+}
+.footer .youtube{
+    color: #f00f22;
+}
+.footer .twitter{
+    color:#45a0e0;
+}
+.footer .linkedin{
+    color:#393bb3;
+}
+.footer .instagram{
+    color: rgb(155, 26, 106);
+}
+@media only screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column; /* Stack nav items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        display: none; /* Hide by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust subtitle size */
+    }
+
+    .footer {
+        font-size: 14px; /* Adjust footer font size */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-links li {
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    .footer a {
+        font-size: 18px; /* Adjust footer link size */
+    }
+}
+
+  
